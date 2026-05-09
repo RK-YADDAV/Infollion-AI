@@ -60,8 +60,8 @@ gemini-chatbot/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/gemini-chatbot.git
-cd gemini-chatbot
+git clone https://github.com/RK-YADDAV/Infollion-AI
+cd your file name
 ```
 
 ### 2. Set Up the Backend
@@ -177,7 +177,7 @@ The app will open at **http://localhost:5173**.
 |-----------|----------------------|
 | Frontend  | React 18, Vite 5     |
 | Backend   | Python, FastAPI      |
-| AI Model  | Google Gemini 1.5 Flash |
+| AI Model  | Google Gemini 2.5 Flash |
 | PDF Parsing | PyPDF2             |
 | Markdown  | react-markdown       |
 

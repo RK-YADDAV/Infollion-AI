@@ -98,10 +98,7 @@ npm install
 ## How to Set Your Gemini API Key
 
 1. Navigate to the `backend/` directory.
-2. Copy `.env.example` to `.env`:
-   ```bash
-   cp .env.example .env
-   ```
+2. Make .env file 
 3. Open `.env` in a text editor and replace the placeholder:
    ```
    GEMINI_API_KEY=your_actual_api_key_here

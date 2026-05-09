@@ -3,7 +3,7 @@ import ChatSidebar from './components/ChatSidebar.jsx';
 import ChatWindow from './components/ChatWindow.jsx';
 
 // Proxy API endpoint (handled by Vite)
-const API = ''; 
+const API = 'https://infollion-ai.onrender.com'; 
 
 function App() {
   // Initialize chat history from the browser's LocalStorage

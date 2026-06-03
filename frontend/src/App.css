@@ -656,22 +656,72 @@ body {
   color: var(--text-secondary);
 }
 
+/* ---------- Mobile Sidebar Logic ---------- */
+.sidebar-wrapper {
+  height: 100%;
+  z-index: 1000;
+  transition: transform var(--transition-normal);
+}
+
+.mobile-menu-btn {
+  display: none;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 900;
+  background: var(--surface-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.mobile-overlay {
+  display: none;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-  .sidebar {
+  .mobile-menu-btn {
+    display: block; /* Show hamburger button on mobile */
+  }
+
+  .mobile-overlay {
+    display: block;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    z-index: 999; /* Below sidebar, above chat */
+  }
+
+  .sidebar-wrapper {
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    z-index: 50;
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Hidden by default */
   }
 
-  .sidebar.open {
-    transform: translateX(0);
+  .sidebar-wrapper.open {
+    transform: translateX(0); /* Slide in when open */
   }
 
+  /* Shift header title to the right so it isn't under the hamburger button */
+  .chat-header {
+    padding-left: 64px; 
+  }
+
+  /* Make chat bubbles fit smaller screens */
   .message-row {
-    max-width: 92%;
+    max-width: 95%;
+  }
+
+  /* Prevent text input from overflowing screen width */
+  .input-bar-wrapper {
+    padding: 10px;
   }
 }

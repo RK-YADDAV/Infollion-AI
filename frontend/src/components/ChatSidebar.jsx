@@ -15,7 +15,7 @@ function ChatSidebar({ chatList, activeChatId, onNewChat, onSelectChat, onDelete
       <div className="sidebar-header">
         <div className="sidebar-brand">
           <div className="logo-icon">✦</div>
-          <h1>Infollion AI</h1>
+          <h1>WasteWise AI</h1>
         </div>
         <button className="new-chat-btn" onClick={onNewChat}>
           <span>＋</span> New Chat

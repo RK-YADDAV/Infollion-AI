@@ -19,8 +19,8 @@ function ChatWindow({
     <main className="chat-main">
       <div className="chat-header">
         <div>
-          <div className="chat-header-title">Infollion AI</div>
-          <div className="chat-header-subtitle">AI-powered assistant for document & image understanding</div>
+          <div className="chat-header-title">WasteWise AI</div>
+          <div className="chat-header-subtitle">Smart waste management and disposal recommendation system</div>
         </div>
       </div>
 
@@ -28,7 +28,7 @@ function ChatWindow({
         {/* Welcome screen shown before any messages are sent */}
         {!hasMessages && (
           <div className="welcome-screen">
-            <h2>Welcome to Infollion AI</h2>
+            <h2>Welcome to WasteWise AI</h2>
           </div>
         )}
 
